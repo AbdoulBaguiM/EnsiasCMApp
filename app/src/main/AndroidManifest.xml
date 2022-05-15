@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ocr.firebaseoc">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".controller.AddScheduleActivity"
+            android:exported="false"
+            android:label="Planifier votre semaine"
+            android:parentActivityName=".controller.HomeActivity"/>
+        <activity
+            android:name=".controller.Auth.SignUpActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".controller.Auth.LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".controller.HomeActivity"
+            android:exported="false"
+            android:label="Mon emploi du temps" />
+        <activity
+            android:name=".controller.EditTeacherActivity"
+            android:exported="false"
+            android:label="Modifier le profil"
+            android:parentActivityName=".controller.TeachersListActivity" />
+        <activity
+            android:name=".controller.EditStudentActivity"
+            android:exported="false"
+            android:label="Modifier le profil"
+            android:parentActivityName=".controller.StudentsListActivity" />
+        <activity
+            android:name=".controller.AddTeacherActivity"
+            android:exported="false"
+            android:label="Ajouter un professeur"
+            android:parentActivityName=".controller.TeachersListActivity" />
+        <activity
+            android:name=".controller.AddStudentActivity"
+            android:exported="false"
+            android:label="Ajouter un étudiant"
+            android:parentActivityName=".controller.StudentsListActivity" />
+        <activity
+            android:name=".controller.TeachersListActivity"
+            android:exported="false"
+            android:label="Liste des professeurs" />
+        <activity
+            android:name=".controller.StudentsListActivity"
+            android:exported="false"
+            android:label="Liste des etudiants" />
+        <activity
+            android:name=".controller.ProfileActivity"
+            android:label="Mon profil"
+            android:parentActivityName=".controller.MainActivity" />
+        <activity
+            android:name=".controller.DetailedProfileActivity"
+            android:label="Profil"
+            android:parentActivityName=".controller.StudentsListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SENDTO" />
+
+                <data android:scheme="mailto" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".controller.MainActivity"
+            android:theme="@style/AppTheme.NoTitle"> <!-- DISABLE TOOLBAR IN MAIN ACTIVITY -->
+
+        </activity>
+    </application>
+
+</manifest>

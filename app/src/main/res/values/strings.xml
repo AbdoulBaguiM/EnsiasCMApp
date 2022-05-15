@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name" translatable="false">Ensias CM</string>
+
+    <string name="main_activity_description">Discute avec tes professeurs, tout simplement.</string>
+
+    <string name="login">Connexion</string>
+    <string name="chat_with_mentor">Discute avec un mentor</string>
+
+    <!-- NOTIFICATION SERVICE -->
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="notification_title">"Vous avez reçu une notification"</string>
+
+    <!-- MAIN ACTIVITY -->
+    <string name="error_not_connected">Vous devez vous connecter !</string>
+    <string name="error_authentication_canceled">Authentification annulée&#8230;</string>
+    <string name="error_no_internet">Aucune connexion internet !</string>
+    <string name="error_unknown_error">Une erreur inconnue s\'est produite&#8230;</string>
+    <string name="connection_succeed">Authentification réussie !</string>
+    <string name="button_login_text_logged">Afficher le profil</string>
+    <string name="button_login_text_not_logged">Connexion</string>
+
+    <!-- LOGIN ACTIVITY -->
+    <string name="toolbar_title_login_activity">Votre Profil</string>
+    <string name="text_input_username">Nom d\'utilisateur</string>
+    <string name="text_view_email">Adresse email :</string>
+    <string name="button_update_account">Mettre à jour</string>
+    <string name="button_delete_account">Supprimer mon compte</string>
+    <string name="button_sign_out_account">Déconnexion</string>
+    <string name="info_no_email_found">Aucune adresse email</string>
+    <string name="info_no_username_found">Aucun nom d\'utilisateur</string>
+    <string name="popup_message_confirmation_delete_account">Es-tu sûr(e) de vouloir supprimer ton compte ?</string>
+    <string name="popup_message_choice_yes">Oui</string>
+    <string name="popup_message_choice_no">Non</string>
+    <string name="check_box_is_mentor">Etes-vous un mentor ?</string>
+
+    <!-- MENTOR_CHAT ACTIVITY -->
+    <string name="toolbar_title_mentor_chat_activity">Chats de discussions</string>
+    <string name="text_input_title_mentor_chat_activity">Composer votre message</string>
+    <string name="button_title_mentor_chat_activity">ENVOYER</string>
+    <string name="text_view_mentor_chat_error">Ce fil de discussion ne contient pour le moment aucun message&#8230;</string>
+    <string name="popup_title_permission_files_access">Cette application a besoin de permission pour fonctionner.</string>
+    <string name="toast_title_no_image_chosen">Aucune image choisie&#8230;</string>
+    <string name="liste_etudiants">Liste Etudiants</string>
+    <string name="liste_professeurs">Liste professeurs</string>
+    <string name="add_user">Ajouter un utilisateur</string>
+    <string name="title_activity_bottom_navigation" translatable="false">BottomNavigationActivity</string>
+    <string name="title_home">Acceuil</string>
+    <string name="title_dashboard">Tableau de bord</string>
+    <string name="title_notifications" translatable="false">Notifications</string>
+
+    <!--String arrays for level-->
+    <string-array name="level_master">
+        <item>Première année (M1)</item>
+        <item>Deuxième année (M2)</item>
+    </string-array>
+
+    <string-array name="level_ingenieur">
+        <item>Première année (I1)</item>
+        <item>Deuxième année (I2)</item>
+        <item>Troisième année (I3)</item>
+    </string-array>
+
+    <!--String arrays for faculty-->
+    <string-array name="faculty_master">
+        <item>Internet des Objets, logiciel et analytique</item>
+        <item>Science de données et big data</item>
+        <item>Sécurité des systèmes et services</item>
+        <item>Cloud and High performance computing</item>
+        <item>Bioinformatique et modélisation des systèmes complexes</item>
+    </string-array>
+
+    <string-array name="faculty_ingenieur">
+        <item>Génie logiciel</item>
+        <item>Intelligence artificielle</item>
+        <item>Smart Supply Chain and Logistics</item>
+        <item>Business Intelligence et Analytics</item>
+        <item>Génie de la Data</item>
+        <item>Ingénierie Digitale pour la finance</item>
+        <item>Ingénierie en Data Science and IoT</item>
+        <item>Systèmes Intelligents</item>
+        <item>Sécurité des Systèmes d’Information</item>
+        <item></item>
+    </string-array>
+
+    <!--String arrays for departements-->
+    <string-array name="departements">
+        <item>Génie Logiciel</item>
+        <item>Réseaux de Communication</item>
+        <item>Informatique et aide à la décision</item>
+        <item>Ingénierie des systèmes embarqués</item>
+        <item>Web and Mobile engineering</item>
+        <item>Langues et Communication</item>
+    </string-array>
+
+    <!--String arrays for timeSlot-->
+    <string-array name="timeslots">
+        <item>08H30 - 10H30</item>
+        <item>10H30 - 12H30</item>
+        <item>14H30 - 16H30</item>
+        <item>16H30 - 18H30</item>
+    </string-array>
+</resources>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/mainLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <!-- USER DATA CONTAINER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:divider="@drawable/divider"
+        android:showDividers="middle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_large_margin"
+            android:gravity="center">
+
+            <!-- FIREBASE IMAGE -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_logo_auth" />
+
+            <!-- PROGRESS BAR -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="@dimen/default_large_margin"
+                android:visibility="invisible" />
+
+            <!-- PROFILE IMAGE -->
+            <ImageView
+                android:id="@+id/profileImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_anon_user_48dp" />
+
+        </LinearLayout>
+
+        <!-- PROFILE CNE CONTAINER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cneLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CNE"
+                android:textSize="@dimen/default_text_size"
+                android:textStyle="bold" />
+
+            <!-- PROFILE CNE -->
+            <TextView
+                android:id="@+id/cneTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/default_margin"
+                android:textSize="@dimen/default_text_size" />
+
+        </LinearLayout>
+
+        <!-- PROFILE FACULTY CONTAINER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/facultyLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Filière"
+                android:textSize="@dimen/default_text_size"
+                android:textStyle="bold" />
+
+            <!-- PROFILE CNE -->
+            <TextView
+                android:id="@+id/facultyTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/default_margin"
+                android:textSize="@dimen/default_text_size" />
+
+        </LinearLayout>
+
+        <!-- PROFILE USERNAME -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/usernameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/default_margin"
+                android:hint="Nom d'utilisateur"
+                android:textSize="@dimen/default_text_size" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- PROFILE EMAIL -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/default_margin"
+                android:hint="Adresse mail"
+                android:textSize="@dimen/default_text_size" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- PROFILE PHONENUMBER -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phoneEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/default_margin"
+                android:hint="Numéro de téléphone"
+                android:textSize="@dimen/default_text_size" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+<!--        &lt;!&ndash; PROFILE MESSAGE CONTAINER &ndash;&gt;
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            android:orientation="horizontal">
+
+            &lt;!&ndash; PROFILE MESSAGE &ndash;&gt;
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingStart="@dimen/default_margin"
+                android:text="L'adresse mail de connexion reste la première adresse renseignée lors de l'inscription"
+                android:textSize="@dimen/default_text_size" />
+
+        </LinearLayout>-->
+    </LinearLayout>
+
+    <!-- BUTTONS CONTAINER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <!-- BUTTON UPDATE USERNAME -->
+        <Button
+            android:id="@+id/updateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_update_account"
+            android:textColor="#fff"
+            android:textSize="@dimen/default_text_size"
+            android:background="@drawable/button_radius_primary_color"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_margin="@dimen/default_margin"
+            android:padding="@dimen/default_margin"/>
+
+        <!-- BUTTON SIGN OUT -->
+        <Button
+            android:id="@+id/signOutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_sign_out_account"
+            android:textColor="#fff"
+            android:textSize="@dimen/default_text_size"
+            android:background="@drawable/button_radius_accent_color"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_margin="@dimen/default_margin"
+            android:padding="@dimen/default_margin"/>
+
+        <!-- BUTTON DELETE ACCOUNT -->
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_delete_account"
+            android:textColor="#fff"
+            android:textSize="@dimen/default_text_size"
+            android:background="@drawable/button_radius_error_color"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_margin="@dimen/default_margin"
+            android:padding="@dimen/default_margin"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_navigation_menu"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</LinearLayout>

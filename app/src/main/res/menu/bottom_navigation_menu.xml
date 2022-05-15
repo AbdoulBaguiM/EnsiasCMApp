@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:enabled="true"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Acceuil"/>
+
+    <item
+        android:id="@+id/nav_students"
+        android:enabled="true"
+        android:icon="@drawable/baseline_people_24"
+        android:title="Etudiants"/>
+
+    <item
+        android:id="@+id/nav_teachers"
+        android:enabled="true"
+        android:icon="@drawable/baseline_school_24"
+        android:title="Professeurs"/>
+
+    <item
+        android:id="@+id/nav_settings"
+        android:enabled="true"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="Profil"/>
+</menu>
